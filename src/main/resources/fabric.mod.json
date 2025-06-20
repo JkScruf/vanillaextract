@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vanilla-extract",
+	"version": "${version}",
+	"name": "Vanilla Extract",
+	"description": "Cooking without the fluff",
+	"authors": [
+		"JkScruf"
+	],
+	"contact": {
+		"homepage": "https://linktr.ee/jkscruf",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vanillaextract/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"jkscruf.vanillaextract.VanillaExtract"
+		],
+		"fabric-datagen": [
+			"jkscruf.vanillaextract.VanillaExtractDataGenerator"
+		],
+		"client": [
+			"jkscruf.vanillaextract.VanillaExtractClient"
+		]
+	},
+	"mixins": [
+		"vanillaextract.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

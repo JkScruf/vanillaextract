@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type" : "minecraft:model",
+    "model": "vanillaextract:item/baked_apple"
+  }
+}
